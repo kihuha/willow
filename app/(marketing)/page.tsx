@@ -1,7 +1,7 @@
 import Navbar from "@/components/shared/navbar";
-import { Search } from "lucide-react";
 import RecentListings from "./_components/recentListings";
 import LastSectionOptions from "./_components/lastSectionOptions";
+import AddressSearch from "./_components/addressSearch";
 
 export default function Home() {
   return (
@@ -18,13 +18,8 @@ export default function Home() {
             <h2 className="text-white text-5xl font-bold text-center lg:text-left lg:text-6xl lg:font-black">
               Agents. Tours. Loans. Homes.
             </h2>
-            <div className="relative text-center mt-4">
-              <input
-                placeholder="Address, neighbourhood, city, ZIP"
-                className="w-full px-4 py-4 rounded-lg text-base"
-              />
-              <Search className="absolute top-1/2 right-4 transform -translate-y-1/2 size-5" />
-            </div>
+
+            <AddressSearch />
           </div>
         </div>
       </div>
